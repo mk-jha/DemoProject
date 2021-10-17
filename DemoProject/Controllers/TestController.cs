@@ -21,7 +21,7 @@ namespace DemoProject.Controllers
                 new Employee(){ Name="MK", Address="Patna", Class="12th", Rollno=101},
                 new Employee(){ Name="MK2", Address="Patna", Class="12th", Rollno=101},
                 new Employee(){ Name="MK3", Address="Patna", Class="12th", Rollno=101},
-                new Employee(){ Name="MK4", Address="Patna", Class="12th", Rollno=101}
+                new Employee(){ Name="MK4", Address="Patna", Class="12th", Rollno=101},
                 new Employee(){ Name="MK5", Address="Patna", Class="12th", Rollno=101}
                 };
             return emplist;
