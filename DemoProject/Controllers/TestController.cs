@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DemoProject.Model;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,16 @@ namespace DemoProject.Controllers
     {
         // GET: api/<TestController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Employee> Get()
         {
-            return new string[] { "value1", "value2", "value1", "value2" };
+            var emplist = new List<Employee>() {
+                new Employee(){ Name="MK", Address="Patna", Class="12th", Rollno=101},
+                new Employee(){ Name="MK2", Address="Patna", Class="12th", Rollno=101},
+                new Employee(){ Name="MK3", Address="Patna", Class="12th", Rollno=101},
+                new Employee(){ Name="MK4", Address="Patna", Class="12th", Rollno=101},
+                new Employee(){ Name="MK5", Address="Patna", Class="12th", Rollno=101}
+                };
+            return emplist;
         }
 
         // GET api/<TestController>/5
